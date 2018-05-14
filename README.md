@@ -42,7 +42,3 @@ I have created an invocation script __bin/SubmitStreamApp.sh__.
  bin/SubmitStreamApp.sh
 ``` 
 You might need to modify all the environment related variables such as SPARK_HOME as per your environment.
-
-The 
-
- 
