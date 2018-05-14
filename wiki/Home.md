@@ -44,7 +44,9 @@ The custom source would be queried, by the caller, to return message between a "
 ### Initialization
 There is no concept of a "initialize" method in the base class; it is left upon the implementation specific. Hence we declare a "initialize" method and invoke it in the class.
 
-![Initialize method call](/images/initialize_method_call.png)
+![Initialize method call](wiki/images/initialize_method_call.png)
+
+https://github.com/venkatra/SparkSqlStream/tree/master/wiki/images
 
 In the initialization you can typically do the following
 * Connect to the actual stream (ex: socket)
