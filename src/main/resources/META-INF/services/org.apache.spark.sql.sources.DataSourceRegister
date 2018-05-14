@@ -1,0 +1,2 @@
+org.apache.spark.sql.execution.streaming.RandomAlphaStreamSourceProvider
+org.apache.spark.sql.execution.streaming.MeetupRSVPStreamSourceProvider
