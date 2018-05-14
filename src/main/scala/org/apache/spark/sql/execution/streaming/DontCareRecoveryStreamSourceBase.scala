@@ -51,10 +51,6 @@ abstract class DontCareRecoveryStreamSourceBase[T](sqlContext: SQLContext)
       batches.slice(sliceStart, sliceEnd)
     }
 
-    //    val rdd = sqlContext.sparkContext
-    //      .parallelize(rawList)
-    //      .map { mapToInternalRow }
-
     val rdd: RDD[InternalRow] = toRdd(rawList)
     sqlContext.internalCreateDataFrame(rdd, schema, isStreaming = true)
   }

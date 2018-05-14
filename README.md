@@ -25,6 +25,8 @@
  * This repo will not necessarily be maintained for future releases/versions of spark. Feel free to take it and 
  explore/enhance at your own will and needs.
  
+The theory and implementation logic is explained in the page [wiki/Home.md](./wiki/Home.md).
+
 ***
 
 __Build__
@@ -41,5 +43,6 @@ I have created an invocation script __bin/SubmitStreamApp.sh__.
 ``` 
 You might need to modify all the environment related variables such as SPARK_HOME as per your environment.
 
+The 
 
  

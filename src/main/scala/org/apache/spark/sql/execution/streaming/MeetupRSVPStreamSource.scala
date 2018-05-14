@@ -73,9 +73,7 @@ class MeetupRSVPStreamSource(sqlContext: SQLContext)
         try {
           logInfo("Opening stream ...")
           val bodyStream = getMethod.getResponseBodyAsStream
-
           val bodyStreamReader = new BufferedReader(new InputStreamReader(getMethod.getResponseBodyAsStream))
-
           var rsvp = bodyStreamReader.readLine
           while (rsvp != null) {
             val newData: (Timestamp, String) = (
@@ -88,14 +86,11 @@ class MeetupRSVPStreamSource(sqlContext: SQLContext)
               currentOffset += 1
               batches.append(newData)
             }
-
             rsvp = bodyStreamReader.readLine
           }
 
           logInfo("Closing stream ...")
           bodyStreamReader.close
-
-
         } catch {
           case t: Throwable =>
             // restart if there is any other error
