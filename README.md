@@ -1,12 +1,12 @@
 # SparkSqlStream
 
- This is a example project meant to demonstrate as to how to custom spark sql structured streaming source. This is based 
- of the implementation code from  
+ This is an example project meant to demonstrate as to how to implement custom spark sql structured streaming source. 
+ This is based of the implementation code from  
  [spark v2.3](https://github.com/apache/spark/tree/v2.3.0/sql/core/src/main/scala/org/apache/spark/sql/execution/streaming). 
  
  The existing dstream based streaming source documentation exists here 
  [Using the custom receiver in a Spark Streaming application](https://spark.apache.org/docs/latest/streaming-custom-receivers.html).
- However their implementation is not same for structured sql streaming. As of this writing; i was not able to find a 
+ However this implementation is not same for structured sql streaming. As of this writing; i was not able to find a 
  clear cut documentation on how to implement a source for structured streaming. The only clue/lead I had to start with 
  was from the stackoverflow :
  
@@ -37,7 +37,7 @@ __Run__
 
 I have created an invocation script __bin/SubmitStreamApp.sh__.
 ```commandline
- ./bin/SubmitStreamApp.sh
+ bin/SubmitStreamApp.sh
 ``` 
 You might need to modify all the environment related variables such as SPARK_HOME as per your environment.
 
