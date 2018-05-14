@@ -44,9 +44,7 @@ The custom source would be queried, by the caller, to return message between a "
 ### Initialization
 There is no concept of a "initialize" method in the base class; it is left upon the implementation specific. Hence we declare a "initialize" method and invoke it in the class.
 
-![Initialize method call](wiki/images/initialize_method_call.png)
-
-https://github.com/venkatra/SparkSqlStream/tree/master/wiki/images
+![Initialize method call](./images/initialize_method_call.png)
 
 In the initialization you can typically do the following
 * Connect to the actual stream (ex: socket)
@@ -56,7 +54,7 @@ In the initialization you can typically do the following
 
 In the "RandomAlphaStreamSource" there is no specific resource/stream to connect too, however a generator thread "RandomStringGenerator" is created. This thread will execute a code that will generate a record and populate the internal buffer. To control the speed at which messages get added to the buffer; i have put a sleep of 2ms between new record generation and appending to the buffer. The code also updates the offset variable "currentOffset", which keeps track of the offset.
 
-![Initialize method implementation](/images/initialize_method_impl.png)
+![Initialize method implementation](./images/initialize_method_impl.png)
 
 
 
