@@ -1,4 +1,4 @@
-**How to implement a custom spark sql streaming source, based of v2.3 ?**
+# How to implement a custom spark sql streaming source, based of v2.3 ?
 
 Git Repo: [SparkSqlStream](https://github.com/venkatra/SparkSqlStream)
 
